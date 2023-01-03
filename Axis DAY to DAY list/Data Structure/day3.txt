@@ -1,0 +1,230 @@
+Data
+    =>collection of values,information,type of instruction,collection of fig,digits
+    =>data facts or statistics information of perticular cocept
+
+data structure
+    =>rep of data in org , collection of data,
+    =>it's a process of arrange the data in proper structure so that use of data will be more easy and efficient
+
+
+
+                                Data structure
+
+        linear DataStructure                                   non linear
+(data are arrage linear or continues)                      data are not in continues 
+all elementsI(data) of are arranged in linear order                   60 
+[1,2,3,4,5,6,7,8,9]                                             59        70
+
+static                             Dynamic                  graph           tree
+this continues memory    here data in dynamic memory location
+loication fixed size
+Array                       stack   queue  linkied list
+
+
+Array
+    =>Array it's type of data structure ,it's a collectionof same data type which store the data in continuous memory
+
+    => if you know the first elements memory address
+    => using index
+
+Array of size 10
+
+        [1-10]
+       int names[]={"surya","manoj","rohit","nithesh"}
+        name="surya"
+        => array data will be continues memory
+        => in array if you know the address of first element you can access other elements
+        Array=100 ["surya":100,"manoj":101,"rohit":102,"nithesh":103]
+                    0            1           2            3
+        array[3]
+        100+2
+        100+2
+        102
+        100
+
+        advatage
+        => values are in continuous memory 
+        => access the vaues randomly using index
+        disadv
+        =>array size fixed
+        => it's depend on continues memory
+        => wast of memory of memory
+        => memory complexity
+
+    [100,.....109]
+    [100 ..119 120(values) ...199]
+
+    Multi dimension array
+        =>array[2][3];
+        => 6
+        =>array[2][3][4]
+        => 24
+
+        array[index1][index2]
+         0 1 2 3
+      0  1,2,3,4
+      1  5,6,7,8
+      2  9,10,11,12
+      3  13,14,15,16
+
+        array[2][2]
+        array[3][3]
+        (1,2)
+
+linked list
+    =>linked list (similar to array)
+    => linked list is linear data structure
+    => collection of data of node
+    => linked list will store the node random memory
+
+    => node 
+        => it's special type of data structure which hold both value and address of next node
+
+    if hold address of any memory in c we pointer variable
+
+
+    struct node{
+        int data;
+        struct node *next;
+    }
+
+    head:100=>[35,addres:1001]100=>[45,addres]:1001=>[]....
+    head = node2=>node1
+    head entry pointer of list
+
+    tail will get you end node of linked list
+    n3=>n2=>n1
+    n1=>n2=>n3=>n4
+
+    n1=>n2=>n3=>n4=>n5
+    node->next==null
+    n1
+    delete
+    head => n1
+    node = head
+    free(node)
+    head=head->next
+
+    Double linked list
+    =>struct node{
+        int data;
+        struct node *next;
+        struct node *prev;
+    }
+    circular linked list
+    n1=>n2=>n3=>n4=>n5=>n1
+
+
+    stack
+        =>linear Dynamic DataStructure
+        =>which will some rules while insert and delete the element from the stack
+        => last element delete first
+        => it's has only one end insert and delete the element
+        => top(front end)
+        =>to keep the track of element ou need to use the approch called top
+        => operation
+            =>push() insert element into the stack
+                top=n1
+                top=n1 
+                n2 top!=NULL n2->next=n1 top=n2  n2=>n1
+            =>pop() delete the element from stack
+                n2=>n1 top=n2
+
+                temp=top
+                top=>top->next
+                free(temp)
+
+                underflow
+
+                overflow
+
+
+    Queue
+    =>it's also a linear DataStructure 
+    =>the data that are inserted to queue will use First insert First delete
+    (FIFO)(LILO)
+    =>Front end and REAR  END 
+    =>FRONT END USED to insert the value to queue
+    =>REAR END used to delete the value from the Queue
+
+
+    frontend=>n2=>n2=>n1=>rearEnd     
+
+    n3=>n2=>n1
+
+    Double linked list queue
+    circular queue list
+
+
+    Tree
+        => it's is non linear Dynamic DataStructure
+        => each value in the tree is store stored in the form nodes in the comparision manar
+        => root(main node of tree)
+        => each data in the tree are called node
+        => each node in the tree will have two or more sub node address
+        => each node in tree have 3 type
+        => parent node(node which have child nodes)
+        => child node(node wwhich have one parent)
+        => leaf node(a node which dont have any child node ) last nodes of the tree
+
+                                     CEO(A) root
+
+           productlead(B)                                productlead(C) 
+
+   techlead(D)            teachlead(E)       teachLead(F)           techlead(G)
+
+   surya manouj,kumar..  shre,susil,vidya    .....                    .......
+
+
+   =>Binary tree
+
+            => each node in a tree will have max of 2 node
+
+
+    create of each nodes in tree must follow some logic to create
+
+
+                    10,40,90,80,5,4,11,2,3
+
+
+                                   10 root
+                            5
+                         4   6                    40
+
+                      2                          11       90
+                          3                             80
+
+
+struct node{
+    int data;
+    struct node *left;
+    struct node *right;
+}
+
+[ leftlink  ,data,  rightlink ]
+
+  1 //comapre data
+
+    => assign data to left link or right link
+  2 // before you assign node to the link you have to check link is empty or not if empty assign the node
+  3 //other wise get the value(addres of next node) of that right link move to that node then repeat second condition 
+
+travel inside tree
+
+
+
+
+                memory managment
+        RAM (16-32)                          ROM
+    temporary memory             permanent memory
+    
+   stack                        heap
+ less memory                large memory block
+normal variable       we use this memory allocation when you try to create object type variable
+memory will present     the variable that hold multiple value heap
+under stack
+
+name                        array memory allocation under head
+names=>addres of the first  100
+element    
+                   

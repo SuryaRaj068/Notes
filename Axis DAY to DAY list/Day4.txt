@@ -1,0 +1,189 @@
+                                    JAVA
+java community very high
+    => java have library
+    => 
+
+java programing langauge , it's an obejct-oriented,secured ,class-based programing langauge
+
+    =>java is platform (code once run any platform)
+    =>bytecode approch
+    =>java is developed by james golsing 1995-96
+    =>1970-1980
+    =>oak first name java
+    =>java 
+    =>1996 oracle
+
+java 
+    obejct-oriented langauge
+    =>object will says dont take data as just value,activity
+
+APPLICATION
+    =>standalone APPLICATION
+        =>single pack for software
+        =>old
+        => it's an software which need to install for all machine
+    =>Enterprise APPLICATION
+        =>large software
+        =>APPLICATION distribute in nature
+        => Bank APPLICATION
+            =>axis bank APPLICATION 
+            => use of APPLICATION will be done at diffrent location
+    =>web APPLICATION
+        =>APPLICATION which run on serve side which can have multiple dynamic web page
+    =>Mobile APPLICATION
+        =>java used to develop Mobile APPLICATION 
+
+java diffrent types(edition)
+    java SE(Standard edition)
+        =>API developer math log .. file
+    java EE(Enterprise edition)
+        =>web and Enterprise APPLICATION
+        => SE om top of SE
+        =>web service,servlet
+    java ME(micro Edition)
+        =>mobile APPLICATION
+    javaFX
+        =>develop rich internet APPLICATION,
+        =>interface in API
+
+JAVA 1995
+JDK 1995(JDK1.0)1996
+    =>march java version
+    java 18(2022)
+    java 19(2023)
+    =>september
+
+features of java
+    =>obejct-oriented
+    =>secured
+    =>robust
+    =>platform independent
+    =>portable(bytecode)
+    =>Architecture neutral(32,64)
+        => it will not depend on implemetation level of os
+    
+build of java
+        JVM =>java virtual machine
+            =>it povide environment to excecute java(run time environment)
+                =>java normal langauge like (english) => machine langauge
+                => java to=> byte code => machine code 
+            => auto memory managment
+            =>complining and interpret the java code
+            =>convert bytecode to machine code
+            => verfiy your code
+            =>load the code
+            => excecute the code   (runtime environment)
+        JRE =>(java runtime environment)
+            => it will contains jvm library
+            => implemetation of jvm
+            => it exit physically
+        JDK => (Java DEVELOPMENT KIT)
+            =>JRE+DEVELOPMENT tools
+            => ALL TOOLS THAT required to develop a java
+            => develop use this to develop an APPLICATION
+            => library
+
+variable
+statements
+    =>condition looping
+function(methods)
+object
+class
+
+variable
+    =>place used store values
+    =>names memory location
+    =>identifers which poin to memory location
+    =>it's a container which holds data
+    =>variable name of memory location where my value is storing
+        =>primitive variable(normal variable)
+
+        =>non primitive variable(reference variable)
+            the variable which hold addres of another memory location(the variable which store non primitive data)
+
+
+memory managment 
+    => memory divide into two parts
+        =>stack and heap
+            =>stack all primitive data type value storing 
+            => address of memory location stored in variable name='s'
+            => all variable hold only the address of stack memory
+            => when you any any non primitive data type which stored inside heap
+             names[098ghsfdhgs]="surya"
+
+
+          stack=>  [5][][].......[5].......[089tyghjlvn]
+                                            098ghsfdhgs
+            068htlkfged
+          heap=> ....[][][].....[surya]......
+                               089tyghjlvn
+    Data type
+        =>primitive data type
+            =>main data type are =>int[4 byte ],float[4byte],char[2byte],double[8byte],byte(1byte),long(8byte),boolean,short(2byte) 
+        =>non primitive data type
+            =>data type the is created(derived) using primitive data type is called string,Array,obejct class
+        =>int float char double string byte long boolean array short 
+
+        =>binary values 
+            32bit (0101010101010101010101010..) 1
+                              
+
+             10=>      00000000..1010
+                          8+2=10 
+                          
+
+                1=>       00000001
+
+
+unicode system
+    =>it's  a process of convert char into specific number system
+    => A => 65 => binary
+        =>ASCII c,c++,size of code convertion not limit 16byte => unicode
+        =>KOI =>china rusian =>
+        =>
+    =>2byte of value
+
+operators
+    =>Arithmetic
+        =>+,-,*,/,% 
+    =>logical
+        =>&&(both condition true=>true),||(any one of the condition is true),!(true=>flase)
+        combine diffrent condition
+
+    =>bitwise
+        =>&,|,^
+
+                    10&2     40&5(40|5)(40^5)
+                    1010    00101000
+                    0010    00000101  
+                    0010 (2)00000000(0) 
+                            00101101
+                              32+8+4+1=(45) 
+                            00101101    
+    =>relational
+    ><>=<=instanceof(),==,!=
+    =>ternary
+        ?: it's replacement of ifelse condition  age>18?yes:no
+    =>assignment
+            =,shorthand operators(+=,-=,*=,/=)
+    =>unary 
+        ++ --
+        postfix prefix      
+                            age=18
+                            age1=age++;
+                            age1=18
+                            age=19
+                            age1=++age;
+                            age1=20
+    =>shift
+    >> << >>>
+        10    1010 
+            0101    10100
+            0010   
+
+
+
+
+
+    
+    

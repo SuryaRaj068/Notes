@@ -1,0 +1,38 @@
+language
+    program language
+        high level
+            =>java,python,c
+            => understand by 
+        low level
+            => understand by machine
+            binary
+
+=> compiler 
+    =>convert source code into binary code
+    => special type of program
+    => translate your code into machine code
+    => set of rules we need to follow
+    => syntax
+    => compiler will us to check the syntax
+    => syntax error 
+    => convert your all code into machine code
+=> interpreter
+    => convert your source code into machine code
+    => syntax error
+    => interpreter will convert each line into machine code and excecute it at that point
+
+=>
+    how can we handle the codes
+    code base maintenance
+    github
+    bitbucket
+    gitlab
+        =>local repository
+        =>remote repository
+
+    etc
+
+
+
+
+

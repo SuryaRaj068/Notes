@@ -1,0 +1,22 @@
+git add. Moves changes from the working directory to the staging area.
+git branch. This command is your general-purpose branch administration tool.
+git branch -vv to check list of branch
+git checkout. to switch betweeb branchs
+git clean. to clean the repositry
+git clone. get remote repositry to local
+git commit. to commit the changes with massage
+git push to push the changes to remote
+git config to configure the git
+to delete branch 
+ to delete localy 
+ git branch -d branchname
+ to delete remotly
+ git push -d branchname
+
+to check remote branch
+    git branch -r
+to check status
+    git status
+git stash to ingnore changes
+git stash apply 
+    get back ignore changes
