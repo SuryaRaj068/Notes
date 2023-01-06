@@ -1,0 +1,261 @@
+variable usage type
+    instance variable
+    local variable
+    static variable //instance variable the value of the variable will be const for all object that perticular class
+            //the instance of static variabe will be at only once
+            //if you create multiple object for that class all object refered that variabe instance 
+    static members
+        =>the instance of the members will be created at only once
+            =>static pool
+
+
+    stack                    heap
+                            object
+                                instance  method
+                                name
+                            obj2
+
+                            static pool 
+                                static members instance will be created
+                                place
+                                main
+                                display
+
+methods
+    process of group the Statements which is used for perticular logic /perspective
+    reuse the logic same Statements when ever we want
+
+
+    access
+
+access Modifier typeof method returntype methodname(parameters){
+    group of logic
+}
+
+Access Modifier
+    Access Modifier in this language will specife scope / accessibility of the perticular filed,method,class
+
+    public 
+        accessibility of that members 
+        will everywhere,class,out class ,package,out package
+
+    private
+        the members will access with in that class
+
+    protected
+           accessibility of the protected members will be with in the class and package but not out side the package 
+
+    Default
+        if you not metion any access Modifier to members then it will be default access Modifier
+        access everywhere but not outside package
+
+typeofmethod
+    =>static method
+    =>non static method
+returntype
+    =>what type of value your geting from that method
+        =>all data type can be used as returntype
+    
+        void special type of returntype
+            =>method is not return anything void 
+method name
+    => common name
+        =>method name must match your logic inside that method
+        =>good method name will be like discription of that method
+        =>you need to follow namingconvention
+
+parameters
+    =>variables which recive the value to the method
+        =>parameters also local variable 
+arguments
+    =>arguments are the values that we are passing to the method
+         resetPassword(){
+            //
+            //
+            
+         }
+
+method declaration
+    =>only metion upto method name method declaration
+method defination
+    a block of code which will run when we call the method
+    public static void show(){
+        
+    }
+
+call method
+    =>block of code which will run when we call it method calling
+    =>methodname(arguments list);
+    =>method call initialization of method to run
+
+task1
+    userinfo
+        name;public
+        userid;private
+        companyname;public
+        place;public
+        age;protected
+        position;private
+    //typeofmethod you can deci
+        createuser();
+        displayuser();//display all info
+class B{
+    name=null;
+    place;
+    age;
+    company;
+    create(B obj){
+        obj.name=sc.next();
+    }
+    display(B obj){
+        obj.name;
+    }
+}
+
+class A{
+    
+    main(){
+        B obj1=new B();
+        obj1.crerate(obj1);
+        B.display();
+    }
+}
+
+constructor
+    =>it's a method
+    =>special type of method which will call only when your create a object
+    =>try to create an object using new keyword
+    =>constructor will not have any returntype
+    =>method name must same as class name
+    =>constructor are used to initialization the instance variable
+
+type of constructor
+    =>parameterized constructor
+    =>default constructor
+
+task2
+    =>userinfoUsingConstructure
+        name;public
+        userid;private
+        companyname;public
+        place;public
+        age;protected
+        position;private
+    //typeofmethod you can deci
+      add construtor
+        //createuser();
+        displayuser();//display all info
+
+        implement this task using constructor(parameterized constructor)
+
+this keyword
+    =>is a special type of keyword which refered the current instance of the class
+    =>it's refer current object of class
+    =>this is default object for your class
+
+    use of this keyword
+        =>different b/w local global(instance)
+        =>this will refer instance variabe only
+    =>default you complier will assign this for all you instance variable if you not mention in not static method
+
+    limitation
+        =>this keyword we con't use inside static method
+    if you want to access normal(non static )instance variabe inside static method then you need to access through a special object only
+
+
+constructor overloading
+    =>it's an approch which us to create multiple constructor inside same class
+    =>method which which same name but which contain different parameterized,returntype different
+
+hi hellow //
+
+task3
+    =>userinfoUsingConstructure
+        name;public
+        userid;private
+        companyname;public
+        place;public
+        age;protected
+        position;private
+    //typeofmethod you can deci
+      add construtor
+        //createuser();
+        displayuser();//display all info
+        //include constructor overloading
+
+    
+OOPS concept
+    =>object-oriented programing
+    =>it was included in your programing language
+    =>reuseability and efficiency,security
+
+inheritance
+    =>reuseability
+polymorphism
+data binding
+
+    inheritance
+        =>process of acquire the property of one class inside another class
+        =>reuse of one class code inside another class
+        =>it a process of create relation b/w the class
+
+    relation b/w class
+    couping(is-a)
+    class A class B (parent-child relation)
+    (important)
+    cohesion(has-a)
+    the relation b/w class is not completely depend
+
+    IS-A(inheritance)
+        =>it's a process of create relation b/w class like parent and child relation
+        =>a class which share a property to other class that class is called parent class
+        =>a class which acquire a property of other class
+
+        Class company (parent class)
+            ||                
+        class employee(child)
+            company name
+            income
+            companyid
+            companyplace
+
+keyword in java extends
+
+
+task1 
+    userinfo
+        name;public
+        userid;private
+        companyname;public
+        place;public
+        age;protected
+        position;private
+    //typeofmethod you can deci
+        createuser();
+        displayuser();//display all info
+task2 implement using constructor
+    =>userinfoUsingConstructure
+        name;public
+        userid;private
+        companyname;public
+        place;public
+        age;protected
+        position;private
+    //typeofmethod you can deci
+      add construtor
+        //createuser();
+        displayuser();//display all info
+
+task3 include constructor overloading and this keyword
+    =>userinfoUsingConstructure
+        name;public
+        userid;private
+        companyname;public
+        place;public
+        age;protected
+        position;private
+    //typeofmethod you can deci
+      add construtor
+        //createuser();
+        displayuser();//display all info
+        //include constructor overloading

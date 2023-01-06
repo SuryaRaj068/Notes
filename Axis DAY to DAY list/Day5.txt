@@ -1,0 +1,239 @@
+Java Control Statements
+    => your complier will execute the code
+    => it will execute code continue
+    => top to bottom
+    => 1=>2=>3.....
+    => printf("he ca vote")
+    => printf("he con't vote")
+    => Control Statements will help us to Control the execution of the you program
+        =>Decision Statements
+            =>condition check the Decision of Statements
+            =>Statements execute only on some condition
+            =>help us to decide which Statements in your need to be execute,when it has to execute
+            => this will decide based on boolean value(true,flase)
+            => expression => get boolean value then we use this value to decide the execute of code
+                =>if Statements
+                    =>it will check for condition
+                    =>if condition is true it will execute
+                        =>if is a keyword
+                        =>pre defined words
+                        => it will expect there must be an expression based on expression it will decide next line of code execute or not
+                            => all condition Statements will have there own body or code block
+                            => any thing which start with { we consider that as block of code
+                        =>any block that next to the condition Statements that will be belongs to condition Statements
+    syntax
+        if(condition)
+          Statements //single line or block of code
+          age=19;
+        if(age>18)
+            s.o.p(age);   //18
+        else              //  else will execute only on decide of if  single line or block of code
+           s.o.p("age is not more than 18"); //age is not more than 18
+
+    simple if else condition Statements
+    =>  nested condition
+    => if-else lader
+        choice handling Statements
+            switch Statements 
+                => it will help us choce b/w the choice
+                => switch(choice/expression)//which handles block of code
+                    => case choice : Statementsp; break; 
+                    => break
+                    => default : Statements
+                    all this choice must be inside switch block
+        syntax
+            switch(choice){
+                case choice : Statements; break;
+                ....
+                ....
+                default : Statements;
+            }
+    
+    =>loop Statements
+            =>repeating the process
+            =>type of Statements which will help us to execute the code repeatedly untile our condition match
+            => execute single line or it will help us execute block
+            loop types
+            => for loop
+                =>foreach
+            =>while
+            =>do while
+        for loop
+            syntax
+            for(initialization ; condition ; increment/decrement){
+                //body of loop
+            }
+            initialization 
+                =>starting point of your loop
+            condition
+                =>ending point of your loop
+            increment
+                =>counting point of your loop
+                =>update part loop
+        while
+            syntax
+                initialization; 
+                while(condition){
+                    increment/decrement;
+                }
+            pri condition
+            do while
+                =>start execution first then it will check the condition
+            syntax
+                do{
+                    Statements;
+                }while(condition);
+            post condition
+            =>jump Statements
+                break; //break the execution of loop help us come out from the loop
+                continue;// if skip any iteration in loop we use
+
+Java OBJECT AND CLASS concept
+    =>OOPs concept
+    =>Object oriented language
+        =>data or logic / function 
+        => object oriented is a type approch /design of program you need to be use both object and class 
+        =>java,python,C#,php,c++
+    Object
+        => instanse of a class
+        => realworld entity which contain state and methods
+        => object is a presentation of class inside run memory(RAM)
+        => object will contain all class data and method(state and method)
+        => we can have multiple object for single class
+    Class
+        =>user defined data type
+        =>blue print of object
+        =>special type of block of code which help us to bind the data and it method together (grouph data and method)
+            =>{
+
+            } 
+        =>it will contain logic info //logical entity
+        =>with this class we able to create object
+        =>class is an logical entity which is not physical exist
+
+    =>Object based language,non class based object -oriented language
+        =>javascript
+
+syntax
+    class classname{
+        block
+        methods
+        variables
+        constructor
+        class
+    }
+
+    ClassName objectName=new classname//constructor();
+
+        =>heap side memory;
+        reference variables =>object
+            non-primitive data type is objects(state,behavior(method))
+        
+        if you create object of any class using this object access memober of that class(variables ad methods)
+
+        just create class user{
+            info about user;
+            name,
+            age,
+            place,
+            company,...
+            income//method;
+            Alldetails//method
+            //perticulardeatil//method
+        }
+
+class
+    =>fields
+        =>variables
+    =>method
+        =>function
+        //type of variables
+
+
+//memory (RAM)variabe methods values
+//present our class inside memory object
+        execute
+
+        register class
+
+        first object of that class
+
+        exceute that line
+
+        we need to register that object creation line inside memory
+
+        inside main
+        execute 
+        main must register
+        register class
+
+        static
+
+
+memory
+    exceute cpu()
+    static  heap
+            memober of class(fields,method)
+
+            static place
+
+
+class A{
+    static name;
+    A object = new A();
+    static main(){
+        A object = new A();
+        object.name;
+    }
+    methods;
+}
+
+static
+    =>allocation of memory of that will not wait until create of object
+
+A obj1=new A();
+A obj2=new A();
+memory
+    main
+    A obj1=new A();
+    StaticVariable
+   
+    A obj1=new A();
+    loading time
+    object
+    static main(){
+        
+    }
+    A 567hsdjhf obj1.num=20
+    A 676858knfkgh obj2.num=30
+
+
+    first static memory
+    age
+    main
+    show
+
+    StaticVariable
+     
+        memory variable will be fixed memory address
+        age=19 9897      obj1=>age<=obj2
+        obj1.age=9897 30
+        obj2.age=9897 30
+methods
+    =>function
+        => block of code which we can can reuse when ever we want
+syntax
+    public returntype add(parameters){
+
+    }
+
+    add(); static type/normal method
+    object.add();
+
+
+
+
+
+
+
+

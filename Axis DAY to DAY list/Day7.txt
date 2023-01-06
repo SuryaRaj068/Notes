@@ -1,0 +1,164 @@
+Inheritance
+    Is-A relation ship
+        =>acquire property of another class
+            =>parent class
+            =>child class
+            keyword 
+                extends
+
+                class A mainclass/superclass
+                    ||
+                    ||
+                class B sub class/child class
+
+class A
+    filed public,default protected 
+    it will not inherit private
+    
+    method
+    it will not send constructor
+    private methods
+
+class B
+
+
+task 1
+        create class Mainbank parent
+            name
+            id
+            phno
+            private bankTotalfound
+            private bankIntrest
+            checkloan(loan)
+            {
+                loan<bankTotalfound
+            }
+            totalintreat(branchIntrest){
+                return bankIntrest+branchIntrest
+            }
+        creat banckbranch child
+            name
+            id
+            phno
+            private branchTotalfound
+            private branchIntrest
+
+            method loan
+            {
+                checkloan(100000)
+                loan is approved;
+                totalintreat(branchIntrest);
+                totalintreat
+
+            }
+
+
+type of Inheritance
+    =>single level
+        =>one parent and one child
+        =>p=>c
+    =>multi level
+        =>parent1=>parent2=>child
+            Indian loan
+            ||
+            ||
+            Bank loan
+            ||
+            ||
+            person loan
+            ||
+            ||
+            person1 loan
+    =>hierarchical
+            parentclass 
+        can have have multiple child class
+                parent1
+        child1             child2
+    child3  child4
+    =>multiple
+        will level Inheritance will not support in java
+        child child can have multiple parent
+
+
+            parent1(name,age)  parent2(place,name,age)
+                |               |
+                |-----child---- |
+
+                   super.name
+
+Task2
+    creat 3 class
+    college
+        collegename
+        collegeid
+        collegeplace
+    branch
+        branchName
+        branchId
+        branchTotalStaff
+    student
+        studentname
+        studentplace
+        studentid
+
+        showStudentdetail
+        {
+            showAlldeatils(studentdetail+collegename+branchname)
+        }
+        showcollege{
+            collegedetail
+        }
+        showbrachdetails{
+            branchdetail
+        }
+
+Polymorphism
+    =>multiple form
+    =>method Overloading
+        =>method with same name but differnt in parameters;
+        print()
+        System.out.print()
+            =>print()
+    =>method Overloading
+        it can be implement by 3 ways
+            =>by change the parameters numbers
+            =>by change type of parameters
+            =>return type //not support for new version ambiguity error
+    Overloading can be used for any methods
+        =>main method
+        =>user defined method
+        =>constructor
+
+    method overriding
+        =>same method will present differnt class while you inherit the classes
+        =>if you want to call parent method use super.method_name
+        =>all child method will execute first if that is not there then it go for parent
+        =>child method will have highest priority than parent
+
+    =>
+        parent name,age
+        ||
+        child place
+                obj of child
+                    obj=(name,age,place)
+                parent child=new Child(); childobj =>parent obj
+                                        =>upcasting
+   
+Encapsulation
+    =>data hiding
+    =>it's a process of hiding the implemetation 
+    =>data  binding
+    => data hiding
+
+Abstraction
+    =>hiding implemetation
+    =>it's a process of hiding the implemetation
+    Abstract class
+        =>class which contain some Abstract method
+        =>Abstract method
+            =>a method which is define but there is no implemetation of that method
+            =>we use abstract class when we dont' know some implemetation and we know some other implemetation
+    inerface
+package
+
+
