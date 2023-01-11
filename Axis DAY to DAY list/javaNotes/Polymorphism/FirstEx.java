@@ -1,6 +1,8 @@
 package Polymorphism;
 
-public class FirstEx {
+import Encapsulation.EmailUser;
+
+public class FirstEx extends EmailUser {
     public static void main(String args[]) {
         System.out.println("Hi");
         System.out.println(56);
@@ -9,6 +11,7 @@ public class FirstEx {
         obj.add(10, 20);
         obj.add(10, 20, 20);
         obj.add(20f, 20f);
+        // System.out.println(obj.userName);
     }
 
     public static void main(String args) {
