@@ -1,0 +1,105 @@
+collection frame work
+    =>framework
+        =>platform ready toll where we can work
+        =>it's a collection of class and interfaces which can be developed by some one which avaialabel for you to make your wok easy
+        =>Architecture
+        =>which is an Architecture for database in java
+        =>collection framework will help us to handle you data in effective way
+            =>like searching,insert data,etc
+        ex:
+        UserArray=>[userObj1,userObj2,.....];
+        name="surya"
+                =>iterate
+                userObj1.name==name
+
+        =>collection framework
+            =>will contain mainly collection Class and interfaces
+                    =>DataBase interfaces(List,Set,Queue,Map)etc
+                    =>DataBase Class(ArrayList,Queue,HashMap,LinkedList,stack) etc
+                    => iterator interfaces and class
+                            =>will help you to traves in the DataBase
+                            =>hasNext();
+                            =>next();
+                            =>remove();
+                    =>Any collection class it will hold only group of objects not values
+
+        =>ArrayList
+            =>Dynamic Array
+            =>size of array is not fixed
+            =>ArrayList is an implementaion of List interfaces
+            =>ArrayList will maintain orderof insert
+            =>ArrayList list will be dynamic size is not fixed
+
+        =>LinkedList
+            =>Dynamic Array
+            =>Type list
+            =>in java pointers is not support
+            =>the variable used to hold memory address of another variable pointers
+            =>refernce variable
+            =>securty
+            =>compl,free()=>untacked memory
+            =>if any memory entered into untracked Type
+            =>garbage collection
+            =>free the un refernced memory location
+            =>refernce concept
+            
+        =>linked list
+            node=>node1=>node2....
+            node   [address,data]
+            =>node objects
+                    =>multiple different type value
+                    =>data
+                    =>next node like
+       doubly linked=>pri node like
+            =>refernce
+        =>allways linked list hold the objects
+
+        =>to create linked list in java
+            LinkedList class it's an implementaion of list 
+
+TASK1
+    =>implementaion of stack using LinkedList of collection frame work
+
+
+    Set 
+    =>each elements in list must be uniqe
+    =>Hashset class maintain implementaion of set interfaces
+
+   TASK2 understand Queue in collection
+
+    Map(interfaces)
+        =>key and value pair
+        =>map it's type dataStructure in java wehre each value in list hold two value(key and values)
+        =>in map key must be unique
+
+    =>HashMap(class) implementaion of that interfaces
+        =>
+    task on hash map
+        =>create class student
+            =>name
+            =>rollno
+            =>collage
+            =>place
+            =>branch
+            =>some
+            
+        class helperClass
+           HashMap<String,Student> StudentMap//store all student object inside this map
+            =>addStudent()
+                =>this help you to create student object take student details add that student object inside HashMap
+                using student rollno as key
+            =>serchStudet()
+                take student rollno as key using search is student is present in map if there print student details
+            =>deletestudent()
+                take rollno and delete student
+        main(){
+            while(true){
+                switch(case){
+                    case 1:addStudent()
+                    case 2:serach();
+                    case 3 :deletestudent();
+                    case 4:exit();
+                }
+            }
+        }
+

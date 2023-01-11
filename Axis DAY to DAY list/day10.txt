@@ -1,0 +1,24 @@
+exception propogation
+    =>flow of exception inside your function or inside your class will call as exception propogation
+    =>exception will be flow in the formate of top to bottom
+
+    class demo{
+        m(){
+            exception;
+        }
+        p(){
+            
+            m();exception;
+        }
+        main(){
+            p();exception;
+        }
+    }
+
+throw
+    =>throw is a keyword which is used to throw an exception explicitly
+    custom exception
+        =>create your type of exception 
+        =>if we want to create any custom exception we have to use main class Exception
+throws
+    to throw exception from one method to another method or one class to another class we use throw keyword

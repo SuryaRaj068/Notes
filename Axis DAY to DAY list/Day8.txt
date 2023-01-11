@@ -1,0 +1,133 @@
+Interface
+    =>100% Abstraction
+    =>it's a blueprint of class
+    =>type of classin this can can only abstract method 
+    =>Interface will act as tracker for your implemetation
+    
+    task1
+    Interface created at the first stage of implemetation
+    =>next we will start use of that using that start the implemetation
+    =>queue
+        =>push
+        =>pop
+        =>serach
+        =>update
+        =>sort
+        50 type of operation
+    class {
+
+    }
+
+    interface 
+    class keyword is not allowed
+
+
+    client will have some requirment
+        =>ask you to implement simple massge app
+        =>analysis of requirment
+        =>list the requirments for client project
+            =>loginpage
+            =>phno list
+            =>textMessage
+            =>sendMessage
+            =>viewMessage
+            =>replay 
+        =>requirment report approved by client DR document
+        CD/CI pipeline
+        techleads => team lead report
+            =>will start the convertion of that to implemention for
+                smapshorts
+                =>templates
+                    =>ui/ux
+                    =>divide your project small tasks
+                    =>massage handle(message has to send how it has to recive protocols )
+                    =>user handle (list of employee and there perm)
+                for ach they will create a interface
+                =>now we send interface to developer
+                allong with report
+                    =>strat using interface and start the implemention of project
+
+        interface
+            =>will have all abstract method
+            =>implement method will also be present interface in the for of default method
+
+            implements
+                =>classname implements interfaceName{
+
+                }
+            inheritance
+                =>multiple inheritance embiguty
+            interface 
+               =>multiple interface implemention is allowed
+               =>we can inheritance one interface with another interface
+
+task1   
+    =>Scenario
+        =>comapany Retail shop
+            =>selling the products
+                =>cosmetics =>10000
+                =>perfume =>5000
+                =>clothes => 7000
+            tax for each products
+                cosmetics tax will be 7%
+                perfume tax will imported 12%
+                clothes tax will be 4%
+                total cost discount 2%
+            in that user cosmetics
+                    cosmetics number of cosmetics user by
+                    qty*(1000+10%)=>cosmetics
+                    perfume number of perfume user by
+                        qty*(5000+%12)=>total prize
+                    clothes number of clothes user by
+                        qty*(7000+%4)=>total prize
+            what is the total prize discount for by the user sum of all three product
+                    discount amout total cost 2% discount
+
+                using interface 
+                    public interface Retail{
+                        getTotalcost(tax,cost,number);
+                        getTotalextendedcost(cosmetics,perfume,clothes);
+                        getTotalDiscount(totalcost);
+                    }
+
+Encpasulation
+    =>binding data
+    =>hiding of implemention
+        =>interfaces Abstraction
+    =>will take care data used in program
+    =>it a process of binding data and code together
+    =>it whill help us to control the use case of your data 
+        application email
+            =>login
+                =>username
+                =>password //important data 
+                =>access of data can be controled by Encpasulation
+            Encpasulation willtake help of your access modifier
+            =>concept
+            =>approch for handling
+            =>it's a process of binding the data to the method
+            => to make that perticular field as readonly or write only field
+
+package
+    =>it's a process of grouping the files together(class) which used for perticular senirio or task
+    =>grouph class and inheritance
+    =>proper managments
+    =>naming collision
+    =>comapany  
+            =>bank
+                =>staff
+            =>development
+                =>staff
+            =>TV
+                =>staff
+        
+                                java
+
+package axis
+How can we use package
+    =>keyword package package Name
+    =>import package
+        =>keyword import package name
+        =>import all class in package
+            =>import package-name.*; 
+    

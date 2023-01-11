@@ -1,0 +1,123 @@
+Collection framework
+    =>Array
+        =>Collection of similar type of data
+        =>size fixed
+        =>contiguous memory location
+        =>in java Array will consider as object
+        =>Array will defined with data follwed by some method
+        =>size fixed
+        Syntax of Array
+        //datatype Arrayname[sizeof Array];
+        datatype Arrayname[]=new datatype[size of Array];
+        store and retrive elements in Array we use index
+        array we used send grouph of data from method to another
+        Anonymous array
+            =>array without name
+    =>for each loop
+        =>foreach loop we can use to get each elements in array
+
+        Array 10
+        array[11]=45;
+            if you try to access array elements not with in the range you will get the exception called array out of bound exception
+
+            for copy array elements
+                =>clone
+                =>system.arrayCopy()
+            =>mutidimention array
+                =>int array[][]=new int[5][6];
+            =>get length of array
+            =>Arrayname.length;
+
+    =>string
+        =>sequence of char
+        =>it's array with char type
+        String str="java"; 
+        //String str=new String("java");
+
+    char[] string=new char[10];
+
+
+task1
+    =>you have to create a class Student
+            =>name
+            =>age
+            =>place
+            =>collage
+            arrayStudent[];
+            count;
+            maibn(){
+                while(){
+                    switch(){
+                        case1 :addStudent();
+                        case 2:displaystudent();
+                        case 3:exit();
+                    }
+                }
+            }
+
+        addstudent()
+
+            take values
+            after you create the object
+            you need to store all objects inside this class array
+            [student objects]
+        displaystudent()
+            display student details using that index of array and that perticular object
+
+Exception Handling
+    =>                               type error
+    Syntax error(compile time error)                    runtime error()
+
+    it's a process of handle errors at run time
+        =>to makesure that over normal flow code will be statified
+        to handle 
+        to handle exception we use two blocks
+            try and catch blocks
+            throw block used for exception Handling
+            throws keyword
+
+                           Exception type
+        checked Exception                                  unchecked exception
+     the exception will be checked at compile time   Exception that accour at execution time
+     IOException                                                
+
+     try
+     catch
+    unchecked exception
+        =>Nullpoint exception
+            Student std=null;
+            std.name;
+            if try to access any property of null object
+        =>Arithmetic Exception
+            =>/ by zero
+            =>run time in Arithmetic operation +,-,*,/,%
+        =>indexoutOFbound exception
+            =>Arrayindexoutofbound exception
+            =>stringindexoutofbound exception
+                =>if try to access the elements of array or string behind it's range
+                =>[0,10] [11] [-1]
+        =>NumberFormat exception
+            =>12x to float
+            =>typemismatch exception
+        =>Connection exception
+            =>data base
+            =>sql data Connection ex
+        =>file Exception
+            =>buffer exception
+    
+    Try Exception
+
+    for lazy exception handling
+        we use throw
+
+    Your logic must be included in try block
+    All exception handling must be included in catch block
+
+
+JVM
+    JDK
+        =>user defined class a
+            =>user data and method
+            =>jvm will add some method to the class
+            =>protocols method
+    JRE
