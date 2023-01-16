@@ -1,8 +1,10 @@
 package JavaProject;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Account extends Bank implements AccountInterface {
+    ArrayList<Transaction> transaction = new ArrayList<Transaction>();
     long account_no = 0;
     float account_balance = 0;
     String account_Type = "";
@@ -35,6 +37,16 @@ public class Account extends Bank implements AccountInterface {
     public void editAccount() {
         // TODO Auto-generated method stub
 
+    }
+
+    public void Transaction() {
+        for (Transaction obj : transaction) {
+            System.out.println(obj.transactionDate);
+            System.out.println(obj.transactionType);
+            System.out.println(obj.transactionAmount);
+            System.out.println(obj.currentBalance);
+            System.out.println("--------------------");
+        }
     }
 
 }

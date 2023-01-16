@@ -3,7 +3,7 @@ package JavaProject;
 public interface AtmInterfaces {
     Customer deposite(Customer customer);
 
-    void withdraw();
+    Customer withdraw(Customer customer);
 
-    void checkBalance(Customer customer);
+    Customer checkBalance(Customer customer);
 }
