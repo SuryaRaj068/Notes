@@ -1,0 +1,201 @@
+DataBase Management system
+    =>it manage the Data
+    =>store the Data
+    =>software which help us to do crud operation on Data
+    =>data stored in unic id
+
+=>if we store in the program while it excecute
+=>it will be present with in that time(ram)
+=>store the data file system
+=>stire the data in the form of data base
+=>software Data Management system
+    =>will help us store the data in h/d 
+    =>it will help us to store the data with it's type
+    =>arrangment of data in data base will proper so access of data will be easy
+    =>all data in the DataBase will be stored in the form of records
+    =>when we try access any data from DataBase will return in the form of records
+        (data)=>(meta data)(actual data)
+    =>meta data 
+        =>data of data
+            =>info about data
+            =>mysql 
+                =>1979 started for development
+                =>michal widenius
+                =>unireg
+                =>mysql
+                =>mysql
+            =>1995 
+            =>2001
+                =>open-source
+            =>use c and c++ in backend to manage the data
+            =>2005 =>Oracle data Management system
+            
+    mysql data type
+        =>data in mysql will have mager two type
+            =>Numeric Data type
+                =>int
+                    =>TINYINT(1 BYTE)127 TO -127 3 DIGIT
+                    =>SMALLINT(2 BYTE) UP TO 5 DIGIT
+                    =>MEDIUMINT(3 BYTE) UP HOLD 8 TO 9 DIGIT
+                    =>INT (4 BYTE) UP TO 11 DIGIT 12 DIGIT
+                    =>LARGEINT(8 BYTE)=>(BIGINT) STORE MORE 11 DIGIT
+                =>FLOAT
+                    =>FLOAT 2 BYTE
+                    =>DOUBLE 8 BYTE
+                    =>DECIMAL 1BYTE
+                =>BOOLEAN =>BOOL
+                    =>1(TRUE)
+                    =>0(FLASE)
+                =>BIT
+                    =>1 TO 64
+            =>String data type
+                =>CHAR
+                    =>0-255
+                =>VARCHAR(SIZE)
+                    =>0-255
+                =>TINYTEXT()
+                    =>0-255
+                    =>SMALL VALUE
+                =>TEXT(SIZE)
+                    =>16000-60000
+                    =>65000 CHARACTERS
+                =>LONGTEXT(SIZE)
+                    =>100000 CHARACTERS>
+                =>BINARY(SIZE)
+                    =>TO HOLD BINARY VALUES OF CHARACTERS
+                
+            DATE
+                =>DATE (YEAR-MONTH-DAY)(YYYY-MM-DD)
+                =>TIME (HH-MM-SS)
+                =>DATETIME (YYYY-MM-DD)(HH-MM-SS)
+                =>YEAR (2 OR 4) (YYYY)(YY)
+
+            JSON
+                =>OBJECT
+                    =>JSON IN JAVSSCRIPT
+
+            BLOB
+                WHICH HELP US STORE ANY IMAGE Data
+                VERY LARGE DATA      
+
+
+DataBase IN mysql
+    =>Collection of data in organized maner
+    =>place where all the data are stored
+    =>DataBase is Collection of records(tables)
+    =>which help us group related table(records) so that when want the data related data we can access it easy
+    =>
+    command 
+        create database database_name 
+    list databases in server
+        show databases;
+    to serch database
+        show database like "database name"
+            return that database otherwise return empty set
+
+    to delete datadase;
+        drop database database_name;
+
+schema
+    =>it contains info about your tables in database and there store value info
+    =>schema will help your server to underastand your data and help to run server
+    =>
+
+
+tables in database
+    =>tables base for database
+        =>which will have arrangment of data in form rows and Columns
+        =>which help us to structure your data when we try to display the data it will look in proer formate
+        =>type od data will be related
+
+        each table will have 
+        tables must be uniq
+        each table will contain it's attributes(field) with data type
+
+to create any tables in data bases 
+
+        create table table(attributes list);
+        create table student(data type name,data type age,data type place,data type dob);
+
+when we try create any table we must include primary key in our table
+    primary key is niothing a unic key which help us to identify each records in the table
+
+   id shreram raj primary(1)
+   id shreram manu primary(2)
+
+when we use primary key 
+    =>we have make primary key as auto increment
+    AUTO_INCREMENT 0,1,2,3
+
+Alter the table
+    =>field number  int 12 DIGIT
+        =>String 1234567='1234567'
+    =>firld numbers String
+        =>"abc123" => number type
+
+    =>which help us to change the table name or attributes or it's type
+
+command
+    Alter table tablename Add new Columns datatype;
+    if we want modify the table
+        =>Alter table tablename modify column name modifing details;
+
+
+commands
+    =>to ADD column the table
+         Alter table tablename ADD columnname datatype after columnname;
+    =>to chage old column
+        Alter table tablename modify old column name newcolumn name data type;
+    =>delete column
+        Alter table tablename Drop column columnname;
+    =>rename column
+        Alter table tablename rename column oldcolumn name newcolumnname;
+    =>rename table
+        Alter table tablename rename to newtable name
+
+task
+
+to create a relation b/w we have to use foreign relation 
+    =>we must have at least one primary in that table which we try to estalish the relation ship
+    =>foreign which help us to create foreign relation ship between tables
+    =>and each table can have relation ship b/w multiple table
+    =>when we try establish foreign relationship we try to refer the that table name allong with it's primary key
+
+
+Inert records to the table;
+    Insert into table_name(filed1,filed2,...) values (value1,value2,value3,....);
+    insert into table_name values(value,value2,value3,...); mu records
+update table
+    after the data in the table
+    update table_name set columnname=new value,... where condition;
+delete data from tables;
+    delete from table_name where condition;
+create database BankSystem
+    =>create table customer
+clauses
+    =>
+    
+Bank system tables;
+        =>customer table
+                =>id varchar(255) primary key
+                =>customer name char(255)
+                =>CustomerEmail varchar(255)
+                =>CustomerPassword varchar(255)
+                =>Customerphno Int
+                =>customercardno BIGINT
+
+            create table
+
+task
+    customer table  ===> account table
+         Account
+            =>accountid pri =>int autoIncrement
+            =>accountno unique=>BIGINT
+            =>Account_balance=>float
+            =>Account_type=>varchar(255)
+            =>customerid int (customer table) foreign //
+            foreign key(customerid) refernces customer(id)
+
+
+        
+                        
