@@ -1,0 +1,73 @@
+Topic1 Multithreading concept(thread)
+        =>thread
+                =>process
+                        =>task that is going on
+                        =>an excecution state of task called process
+                =>thread is an small unit of process(sub-process)
+                =>thread dived process into small unit
+                =>and each unit will excecute independently
+                =>thread will help us to multitsking
+        usecase Multithreading
+                =>Multithreading will help the user to do multiple task at a time
+                =>multiple user can do diffrent becouse each task will work independently
+                =>effecy of System will be more
+                =>each thread will not affect other thread if some thing wrong in one thread
+        =>thread is a lightwight subprocess of given process,thread is a smallest unit of process
+
+        life of thread
+
+        to achive multi threading in java we have a mian class for thread
+                that is 
+                Thread class
+                this class will provid more methods for us to intract with thread
+
+        OS will be beast ex of Multithreading
+                =>in os we can do multiple task
+                        =>like i can use multiple app at same time
+                        =>switch between the task
+Topic2 Complete project on java 
+        (Bank System)
+        =>Bank class
+                field
+                =>Name
+                =>address
+                =>Bankcode =>(name+code)
+                method
+                =>getAccount()//display  account no in that bank
+        =>Customer class
+                field
+                CustomerId:int
+                CustomerName
+               edit CustomerEmail
+                CustomerPassword
+               edit Customerphno:long
+                customercardno:long
+                methods
+                addCustomer()=>addAccount()
+                deleteCustomer()=>deleteAccount()
+                editCustomer()
+        =>Account class
+                field
+                Acoount_number:long
+                Account_balance:float 10000
+                Account_type:string
+                method
+                addAccount() 
+                deleteAccount() if balance < 10,000
+                edit_Account();transaction
+                search_Account();accountno details
+        =>Transaction class
+                transaction_id:autoIncrement int
+                transaction_date:Date
+                transaction_amount:float
+                transaction_type:string
+                current_balance:float => update in  Account_balance
+                method
+                AddTransaction()
+        =>ATM class     when we use ATM call transaction
+                method
+                =>deposit() =>AddTransaction()
+                =>withDraw() => check Account_balance > withDraw amount transaction and update in account
+                =>checkBalance() => show current Account_balance transaction class we have to triger
+
+=>customer=>Account1

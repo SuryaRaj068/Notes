@@ -1,0 +1,138 @@
+Thread
+    =>smallest unit of process
+    =>multitasking
+
+    =>process => excecution state of program
+    =>excecution it allocated inside ram
+        =>if program is big allocated memory in Ram is more
+    =>if that program take entire cpu
+
+=>thread will help us to divide your excecution part of program to multiple blocks
+small unit 
+    =>this method will help us to multitasking
+
+
+    =>all thread will share memory location
+
+
+        thread1 =>m1 10s
+        thread2 =>m2 30s
+        thread3 =>m3 2m
+        thread4 =>m1 =>40s
+        thread5 =>m2 =>
+
+
+
+life cycle of thread
+    =>New (in Active)
+    =>Active
+    =>waiting
+    =>run
+    =>terminated
+
+
+
+                                New(thread is created)=>always in New stage until it go for Active
+                                    when thread in new stage we con't run the thread (indicate that it's not excecuted)
+
+                                    ||
+                                    ||
+                                    ||
+                                 Active stage start()
+                                we can send the thread in active stage to indicate that thread is now ready for excecution
+                                if you want send thread into active stage we call call method called Start()
+                                    this process will put your thread into substage
+                                        runnable state
+                                            =>it indicate that you  your thread is ready to run but it's running 
+                                        running state 
+                                            =>when thread get cpu to excecute
+                                    ||
+                                    ||
+                                    ||
+                                    ||
+                                waiting stage wait()
+                                your excecution it went for inactive stage for some time 
+                                if you want to block the excecution of thread for some time
+                                wait()
+                                    ||
+                                    ||
+                                    ||
+                                    ||
+                                    ||
+                                run stage run()
+                                 excecution time of thread is run stage
+                                 it excecute the run method
+                                    ||
+                                    ||
+                                terminate stage stop() end()
+                                    it's a process of delete the thread from memory
+                                        after completion of excecution it will terminate
+
+                                    sudden termination
+                                        unwanted termination
+
+                        thread life cycle:
+
+                                new
+                                ||
+                     runnable -------> running   (Active)
+                        |        || (wait)|
+                        |        ||       run
+                        |        ||       |
+                        |     waiting -----(run)   (inactive)
+                        |        ||(stop)
+                        |        ||
+                        ------>terminate
+
+to check state of thread getState()
+
+=>method to create thread
+    =>using runnable interface
+    =>by extending thread class
+
+        creating a thread using runnable interface
+            when we use runnable interface to create thread
+             1)we have to be implement runnable mainly run method
+             2)then we have to create object of implemented class
+             3)we have pass that objects to thread constructor to create thread
+
+        create a thread by extend thread class with our class
+            1)create  a userdefined class extend that class to thread class
+            2)in that class override run method create run method in that class
+            3)create a object of that class
+            4)then we can use that object as thread
+
+thread Scheduler
+    =>it's a process of deside which thread need to excecute and which thread need to wait for excecution
+    thread algorithm which help us to handle thread excecute
+    thread Scheduler decide based on this 
+        =>Arrive time
+        =>Priority  (range of Priority will be 1 to 10)
+            =>which thread as hiest Priority that thread will start excecute first
+            =>thread Priority 1 and another thread have Priority 5
+
+Time-slicing (not using Priority Scheduler time-slicing will work)
+    =>if you using Arrive time approch to Schedule the thread
+    =>when we excecute any thread don't give entire time slot of cpu for one thread
+    =>divide your cpu excecution time for small slot for each threads and let threads excecute with in that slot
+
+            1s,3s,5s,6s,8s
+            T1,T2,T3,T4,T5  2scpu
+           10s,3s,1s
+
+           T1
+           2s(sleep) T2
+                     2s(wait) T3
+                              1s(end) T4
+                                      2s(3s)wait T5
+                                                    2send T1
+                                                         2s(6s)wait T2
+                                                                    1s end T4
+                                                                            2s(1s)wait, T5
+                                                                                        2s()end T1
+
+wait Approch for thread 
+
+    thread Pool
+        it's grouph of threads which are used forr some jobs
+    Thread grouph
