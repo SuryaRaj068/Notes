@@ -1,0 +1,187 @@
+KOTLIN PROGRAMING LANGUAGE
+    =>General pupose PROGRAMING language
+    =>Function based
+    =>object based PROGRAMING language
+
+    =>Back-end development(back-end web development) nodejs(javascript) pyhton django
+    =>server-side development(kotlin)(microservice)
+    =>Android development(kotlin) java as back-end for Android (kotlin official language)
+    =>cross platform mobile development application
+        =>Android ios
+        =>kotlin language cross platform apps
+        =>kotlin multiplatform mobile application(KMMA)
+    =>Data science
+
+   =>2016 
+   =>2013
+
+google make kotlin as an official language for Android
+
+        =>spring cloud,spring boot in java and kotlin
+        =>microservice
+
+    Advantage kotlin
+     =>   it's help build less code for any application
+        quality of code with little quanty of code
+        concise approch
+     =>  kotlin is compatible with java     
+                kotlin is build on top of JVM
+     =>  strong community
+     =>  it will accept both function based oject based approch of development
+     => it will help us to avoid null point execption
+
+
+java vs kotlin
+    =>1996
+    =>kotlin it's you need metion data type at every time when yor using variable
+    =>dont need to mention data data it will depend on data which is holding
+
+
+javascript
+    dynamic PROGRAMING language
+        var name="surya";
+        name=23;
+
+    history of kotlin
+        =>jetBrains company
+        =>intellij  => is best idle for kotline
+        =>2010
+        =>2016 after 20 year of java
+        =>2016 official language Android 2018 
+
+        =>google , uber ,guidewire,etc
+
+variables in kotlin
+
+    =>is a memory location  to store data
+
+    to declaration
+     in kotlin
+        var variablename=data;
+        val variablename=data;
+
+    difference b/w var and val
+            the var variable is mutable the value of variable can be chage
+
+            the val variable is immutable value canotbe chage
+
+
+    data type in kotlin
+        number
+            =>Byte
+            =>Int
+            =>Short
+            =>Long
+            =>Float
+            =>Double
+        character
+           =>Char
+        boolean
+            =>Boolean
+        array
+            Array/arrayof()
+        string
+            =>String
+
+
+        to convert to data rom one type another type
+            toInt();
+            toLong()
+            toByte();
+            toShort();
+            toFloat();
+            toDouble();
+
+        
+        opertor
+            Arithmetic opertor
+            +,-,*,/,%
+            ralation opertor
+            >,<,>=,<=,==,!=
+            Assignment opertor
+            =,+=,-=,*=,/=,%=
+            unary operator
+            ++,--,!
+            logical operator
+            &&,||,!
+            Bitwise
+            shl(bits) shift left
+            shr(bits)  shift right
+            and(variable)   var a=10;
+            or(variable)    var b=20;
+            xor(variable)   a.and(b)
+
+  read data from user in kotline
+          readLine()  
+        //scanf()  
+
+Expressions(statments)
+    =>if()  if(codition){
+
+    }
+    =>if(){}else{}
+    =>nested if statments
+    =>lader if statments
+
+looping
+    =>for
+    =>while
+    =>do whuile
+    =>jump statments
+    break
+    continue
+
+    label for looping
+    =>we can give name for the looping
+    @ symbol for give label
+
+kotlin function
+    block of code of which which used to perform perticular task
+    =>function help us use that blok of code whenever we want by calling function
+
+        =>user defined function
+        =>standard function 
+
+    if we want to create any function in kotlin use keyword called fun
+        syntax of fun
+        fun function(parameters):returntype{
+                statments
+            }
+
+        we can create name less function
+
+        we can create function without name 
+            =>lambda Expressions
+            
+            syntax
+
+            (variabletype list)->{body of the function}
+
+
+    Array
+        =>collection of same type elements 
+        =>all element in array have same datatype
+
+    create array in kotline we have to create using array object Array constructore
+
+        var arrayname=Array(Size:Int)
+
+        int[] array=new int[size]
+
+    if we already know elements of array we can use 
+       var arrayname= arrayOf(elements list)
+
+
+Exception handling
+    keywords in Exception 
+    =>try 
+    catch 
+    finaly
+    throw
+    throws
+
+    =>error will accour at runtime that error are called Exception
+     to that handle that errors we need execption
+
+     
+      
