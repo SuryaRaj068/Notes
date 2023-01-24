@@ -1,0 +1,219 @@
+MongoDb
+    NoSql
+    
+        dataBase managment  
+
+Sql dataBase        NoSql dataBase
+
+mysql                 MongoDb
+postgsql              Apache cassandra
+H2 dataBase           Amazon DynamoDB
+                        Redis
+                        Neo4j
+                        Apache HBase,couchDb
+
+
+
+MongoDb
+    =>why dataBase managment system?
+        =>to organize data
+        =>access will be easy
+        =>big data can be maintain easy
+        =>to make crud operation on that data will be easy
+
+SQL dataBase    
+    Structured(Relational Data Base)
+        what are data you store in sql all the data will be in the form of tables ad inside row with attributes of that tables
+
+        user data
+            name place age DOB company second
+            surya delhi 27 1996 ms
+            shree delhi 27 1996 null
+
+in sql it always follow the schema
+
+        web page asking user details
+            =>we have to take all this field that are metion in the tables
+    
+    =>schema approch difficult to maintain for large amount of data set
+    =>schema oriented dataBase
+    =>sql data base managment system will very slow
+    =>join in sql will be very slow approch
+    =>foreign key effect
+    =>slect name from user;
+
+            bank tables
+            user tables
+            account tables  
+                userid
+                bankid
+
+nosql will don't follow any schema
+
+
+nosql
+    =>MongoDb
+        =>nosql
+            no sql they is no realtion b/w data 
+            document-oriented dataBase
+        =>10gen company MongoDb license
+        =>open source
+        =>mongodb commerical unit Atlas clound dataBase
+        =>mongodb community version
+        =>mongodb is a scalable dataBase 
+        =>it hold huge data set compare to mysql 150000 
+        =>mongodb will use magerly commodity server 
+            =>Amazon application
+                =>shopping
+                    =>computer=>details ,book=>details
+                    we no need to follow any Structured     collection block
+                                                            user{name,age,place}
+                                                            computer{nme,batrynscrean,etc}
+                                                            book{bookname,nopages,len,etc}
+        
+
+                mongodb was developed 2007
+                    =>when this commodity server
+                    =>PAAS(platform as a service)
+                    =>SAAS(So0ftware as a serviec)
+                    =>dataBase managment system for ost of company
+                Advantage
+                =>performance of mongodb
+                =>crud mongodb easy
+                =>develop dataBase is faster than sql   
+                =>scalability of mongodb is high(Bigger data set)
+
+
+        structure of mongodb
+        schema based                    ocument-Oriented 
+            mysql                          mongodb
+          Database                         Database
+          tables                           collections
+          (schema of data attritube type)    (no schema)
+           rows                             Documents
+           data                              fields(data)
+
+
+        Documents in mongodb
+        Ex
+            it will use aproch called json
+            Bson approch in mongodb
+
+            name="surya"
+            age=27
+            place="delhi"
+
+
+
+
+Command list
+    =>to check version of mongodb
+        mongod --verson
+    =>to check sh version
+        mongosh --version
+    =>to strat server
+        mongod
+    =>to list databases in mongodb
+        show dbs;
+    =>create data base in mongod
+        =>use dbName
+    =>to view current dataBase
+        db
+    =>to list collection in db 
+        show collections
+    =>to create collection in db
+        db.createCollection('collection_name')
+
+    =>insert document inside collection
+        db.users.insertOne({name:'surya',place:'delhi',number:2})
+    =>to list documents in collection 
+        db.collection_name.find()
+    =>insert many records collection
+        =>db.collection_name.insertMany([{name:'raj',age:26},{name:'rohan',age:23,place:'delhi'}])
+    
+    update data in document 
+        db.collection_name.update({name:'surya'},{$set:{'age':28}})
+    =>if wwe use upsert:true it will add that filed to the document if it in not present in that document
+       db.collection_name.update({name:'surya'},{$set:{'age':28}},{upsert:true})
+        update operator in mongodb
+        =>all operators in mongodb will start with $ symbol
+        $set
+            =>will help us to update the filed value inside that document
+        $inc
+            =>which help us to inrement the perticular value by given value
+            db.users.update({name:'sharath'},{$inc:{age:2}})
+        $min
+            =>which help us to modify that perticular field value if the new value is less than current value
+                    age=22
+                    age=24
+                db.college.update({name:'mitt'},{$min:{noyear:13}})
+
+        $max
+                =>which will update the field value if curret upate value greater than curret document value
+                db.college.pdate({name:'mit'},{$max:{noyear:15}})
+        $rename
+                =>it will help us to update tyhe field name to new value
+                db.college.update({name:'mit'},{$rename:{noyear:'totalYear'}})
+        $unset
+                this will help us to remove perticular field from the document
+                db.college.update({name:'mit'},{$unset:{noyear:13}})
+
+        filed and value
+            {
+                name:'mit',
+                place:'delhi',
+                brachs:['cs','is','ec']
+                rankOfBranch:[{branch:'cs',rank:4},{branch:'is',ranck:4}]
+            }
+
+    $push
+            =>if we want to add any value to the array in document field we have to use push
+            db.college.update({name:'mit'},{$push:{branchs:'eee'}})
+        branch field will update to ['cs','is'] => ['cs','is','eee']
+    $pop
+            =>to remove any elements from array field
+    $pull
+            =>will search that perticular element and remove 
+            db.college.update({name:'mit'},{$pull:{branchs:'eee',branchs:'cs'}},{multi:true})
+
+    for limit 
+         db.college.find().limit(3)
+    find with condition
+        db.college.find({name:'mite'})
+    delete array element in filed using pull
+        db.college.update({name:'mit'},{$pull:{branchs:'eee'}},{multi:true})
+    delete last elemet in array field
+        db.college.update({name:'mit'},{$pop:{branchs:1}})
+    delete first element in array field
+        db.college.update({name:'mit'},{$pop:{branchs:-1}})
+    to add element in array
+        db.college.update({name:'mit'},{$push:{rankOfBranch:{branch:'ec',ranck:3.5}}})
+    
+    for sort dcument by perticular filed we use sort method
+                     key   1:ascending orders
+                          -1:descending order
+            db.college.find().sort(age:1)
+
+    remove all elements in documents ,collection,databases
+        =>delete doument from collection
+            remove method to delete document from collection
+            db.college.remove({codition})
+            if you want to remove all documents 
+            db.college.removeAll()
+            db.college.remove({name:'mitt'})
+        =>to delete collection from db
+            we have to sue drop
+            db.collection_name.drop()
+        =>to delete dataBase from mongodb
+            we have to use drop
+            db.database_name.drop()
+            =>if you want any dataBase you must use that dataBase first
+                use database_name;
+                db.dropDatabase();
+                after drop switch to other dataBase
+
+
+ex
+        orders
+        productid productname,product batry,screan
+
