@@ -1,0 +1,70 @@
+Design patterns
+    represent of code in best practice used to create a code using object-oriented program,which result in developemt is easy
+
+    Design patterns will provide an solution for general problem which we see in day to day development
+    developer will face issue when they follow developemt approch of substantial period of developemt
+    object-orientd coding approch   
+        in this approch Design java taking examples
+            object-orientd concept
+
+        basic of Design  patterns
+                Gang of four (GOF) patterns
+                1994-1996
+                Erich Gamma,johnson,richard,john Vlisside
+                    =>interface concept and implementation
+                    =>how can we handle differnt differnt object creation approch
+                design patterns will main used in software developemt
+                adv design patterns
+                    =>provide standard approch (patterns) for perticular type of scenario
+                    =>developemt process easy
+                    etc
+                differnt design
+                    =>Creational Design patterns
+                        =>this design patterns will help us to handle create of object,how can we hidding of that object,clone that object
+                    =>Structural Design patterns
+                        =>class,inheritace,interface Structural design patterns will help us to handle it
+                    =>Behavioral Design patterns
+                        =>Api communication project communication b/w object
+                
+                Creational patterns
+                    =>singleton patterns
+                        =>simplest patterns in Creational patterns ,it's one of most commonly used patterns
+                            =>singleton patterns which will handle the creation of object, it will help us make sure that each class in your project
+                                must have only one object 
+                            =>it will infom that each class which we say that as singleton class the constructor of that class will be private ,and make the instance of that class to be static
+                            =>task1 create class bank make this bank class ass single turn (method's bankstatus(open or closed))  method bankstatus(time){check the time is <9-18>}
+                                create class called checkBank which have to be use singleton bank object to check bank status by passing the time
+                            =>spring boot dependency injection
+                    =>factory patterns
+                        =>it's mosted used pattern in object-orientd concept
+                        =>this will help us to handle the creation object with out show logic of create that object client which wil use interface concept
+
+                    =>builder patterns
+                        =>we buiold pattern which help us to create complex object make that object create very simple way with other help of other object
+                        =>it used to create an object
+                    =>prototype patterns
+                        =>it's one of basic pattern weve in our list which help us create duplicate object you project
+                         =>while using prototype pattern we have to be keep in mind that performance of project
+                         =>prototype pattern used when we have default rules
+                         =>prototype class which which maintain all the information about that perticular
+                         =>class when we use the class we basically alter propert ,class prototype
+
+
+                         =>chess bord class =>main obj1 =>
+                            =>copy obje1=> copy obje2
+
+                    Structural pattern
+
+                    =>bridge patterns
+                            =>bridge it will act like bridge b/w two differnt class with the help of interface
+                            
+
+
+
+                    =>Adater patterns
+
+                        
+
+
+                    jdk 8  jdk 10
+                        JVM one obejct
